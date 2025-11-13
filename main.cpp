@@ -16,7 +16,7 @@ int main() {
     SYMBOL_TABLE = buildSymbolTable(lines);
     vector<ParsedInstruction> instructions = parseInstructions(lines);
 
-    cout << "\n--- Opcode Translation ---" << endl;
+    cout << "\nOpcode Translation" << endl;
     INSTRUCTION_MEMORY = translateToOpcode(instructions);
 
     cout << "Address\t\tOpcode (Hex)\tInstruction" << endl;
@@ -30,3 +30,4 @@ int main() {
 
     return 0;
 }
+
