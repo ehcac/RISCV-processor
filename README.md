@@ -14,7 +14,25 @@ a simulator for a simplified RISC-V processor in C++
   - User is able to edit main memory, and register throughout runtime
 
 ## To run:
-<pre> ```cd cpp_files </pre> <pre> emcc *.cpp -o ../simulator.js \ -s WASM=1 \ -s ALLOW_MEMORY_GROWTH=1 \ -s EXPORTED_RUNTIME_METHODS='["ccall","cwrap"]' \ -s EXPORT_ES6=0 \ --bind \ -std=c++17 \ -O2 </pre> <pre>cd ..</pre> <pre># Start a local server python3 -m http.server 8000 # OR python -m http.server 8000 ``` </pre>
+```bash
+cd cpp_files
+
+emcc *.cpp -o ../simulator.js \
+  -s WASM=1 \
+  -s ALLOW_MEMORY_GROWTH=1 \
+  -s EXPORTED_RUNTIME_METHODS='["ccall","cwrap"]' \
+  -s EXPORT_ES6=0 \
+  --bind \
+  -std=c++17 \
+  -O2
+
+cd ..
+
+# Start a local server
+python3 -m http.server 8000
+# OR
+python -m http.server 8000
+```
 
 
 ## Supported Instructions:
