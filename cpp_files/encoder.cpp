@@ -1,4 +1,4 @@
-#include "encoder.hpp"
+#include "../hpp_files/encoder.hpp"
 
 // Assembler Phase 3: Encoding Functions
 

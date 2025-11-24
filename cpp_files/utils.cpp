@@ -1,4 +1,4 @@
-#include "utils.hpp"
+#include "../hpp_files/utils.hpp"
 
 unsigned int binToUint(const string& bin) {
     return stoul(bin, nullptr, 2);
